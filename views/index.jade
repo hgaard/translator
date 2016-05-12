@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= title
+	form(action='/english', method="post")
+		div.input
+			span.label Word:
+			input(type="text", name="danish_words")
+			input(type="submit", value="-> English")
+
+	form(action='/danish', method="post")
+		div.input
+			span.label Word:
+			input(type="text", name="english_words")
+			input(type="submit", value="-> Dansk")
